@@ -5,7 +5,7 @@ files:
   - source: /
     destination: /usr/share/nginx/html 
     overwrite: yes
-
+file_exists_behavior: OVERWRITE
 permissions:
   - object: /
     pattern: "**"
