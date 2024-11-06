@@ -9,4 +9,4 @@ phases:
   post_build:
     commands:
       - echo "post build"
-      - cp -r $CODEBUILD_SRC_DIR $CODEBUILD_MY_EFS
+      - cp -r $CODEBUILD_SRC_DIR/* $CODEBUILD_MY_EFS
