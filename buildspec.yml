@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "pre build"
+  build:
+    commands:
+      - echo "building"
+  post_build:
+    commands:
+      - echo "post build"
+      - cp -r dist/my-angular-project $CODEBUILD_MY_EFS
